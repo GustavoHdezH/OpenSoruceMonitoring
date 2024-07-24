@@ -2,7 +2,7 @@
     <img  width="200" height="200" src="/docs/Monitoring.png">
 </div>
 <div> 
-  <h1 align="center">Open Soruce Monitoring</h1>
+  <h1 align="center">Open Source Monitoring</h1>
   <p>
     Free and Open source monitoring configuration template for setting up Prometheus, Node Exporter, PostgreSQL Exporter,
     Windows Exporte, Grafana, and cAdvisor using Docker Compose.
