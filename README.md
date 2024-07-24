@@ -49,8 +49,6 @@ be assigned IP **10.10.10.5**.
 
 *Note: Make sure the windows exporter service is running on your server*
 
----
-
 ## Fire it up
 
 1. Clone down the example files
