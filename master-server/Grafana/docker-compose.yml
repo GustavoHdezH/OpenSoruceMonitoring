@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  grafana:
+    container_name: grafana
+    network_mode: network #replace with your docker network
+    privileged: true
+    user: "1000" # replace with your ID User Linux
+    image: grafana/grafana
+    restart: always
+    volumes:
+      - ./grafana-data:/etc/grafana/provisioning/datasources
+      - ./grafana-data:/var/lib/grafana
+      - ./grafana-data/plugins:/var/lib/grafana/plugins
+    ports:
+      - 8010:3000 # Replace with your open port

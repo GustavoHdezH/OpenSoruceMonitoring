@@ -1,0 +1,22 @@
+global:
+  scrape_interval: 1m
+
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 1m
+    static_configs:
+      - targets: ['10.10.10.3:8011'] # replace with your IP server and open port
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['10.10.10.3:8012'] # replace with your IP server and open port
+  - job_name: 'cadvisor'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['10.10.10.3:8013'] # replace with your IP server and open port
+  - job_name: 'postgresql-exporter-db'
+    static_configs:
+      - targets: ['10.10.10.3:8014'] # replace with your IP server and open port
+#  Bare Metal Cluster Server
+  - job_name: 'Windows_Server_Machine'
+    static_configs:
+      - targets: ['10.10.10.5:9182'] # replace with your IP server
